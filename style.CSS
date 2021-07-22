@@ -1,119 +1,255 @@
-
-body {
- background-color: #F2E9E4; 
- text-align: center;
- font-family:'Courier New', Courier, monospace;
+/* STYLE SECTIONING TAGS */
+* { /* Reset the space of the webpage */
+   margin: 0px;
+   padding: 0px;
 }
 
-main {
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 20%;
-  margin-right: 20%;
-}
-
-ul {
+/* NAV */
+ul.navBar {
   list-style-type: none;
-  background-color: #9A8C98;
+  background-color: #c9184a;
   overflow: hidden;
   padding: 1em;
-  margin-bottom: 4em;
+  text-align: right;
 }
 
-li{
+li.nav-item{
   display: inline;
 }
 
-li a {
+li.nav-item a {
   text-decoration: none;
-  color: #F2E9E4;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #F8EDEB;
   font-size: 1.3em;
   padding: 1em;
 }
 
-li a:hover {
-  background-color: #C9ADA7;
+li.nav-item a:hover {
+  background-color: #ff758f;
 }
 
-p {
-  font-size: x-large;
-  /*margin-right: 50px;*/
-}
-
-h1, h3, h2, p {
-  color: #4A4E69;
+body {
+ background-color: #F8EDEB; 
 }
 
 h1 {
-  font-size: xx-large;
-}
-
-h3, h2 {
-  font-size: x-large;
-}
-#intro {
-  font-family: Arial;
-  font-style:italic;
-  letter-spacing: 5px;
+  color: #ffccd5;
   font-size: 60pt;
-  text-shadow: 10px 10px 10px #9A8C98;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  text-shadow: 5px 5px 0px #c9184a;
+  text-align: center;
+
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
-.portfolio{
+h2{
+  color: #a4133c;
+  font-size: xx-large;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 1em;
+}
+
+#wcabackground{
+  background: linear-gradient(#a4133c, #F8EDEB ), url("assets/protest.jpg");
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  color: #ffccd5;
+  font-size: 60pt;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  text-shadow: 5px 5px 0px #c9184a;
+  text-align: center;
+
+  margin-top: 0px;
+
+}
+
+#bottomMain {
+  background-color: #ffccd5;
+  padding: 2em;
+}
+
+p{
+  text-align: center;
+  color:#800F2F;
+  font-size: 24pt;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 200;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  display: block;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 500px;
-  border-radius: 5%;
-  border: 5px solid #4A4E69;
-  box-shadow: 10px 10px 5px #C9ADA7;
+  width: 1200px;
 }
 
-.portHeader{
-  margin-top: 60px;
-}
-.hobby{
-  display: inline;
-  text-align: left;
+#WCA{
+  margin-right: 900px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18pt;
+  color: #F8EDEB;
+  font-weight: bold;
+  text-shadow: 3px 3px 0px #ff758f;
 }
 
-#headshot{
-  float: left;
-  width: 250px;
+#callSenator{
+  background-color: #ffccd5;
   display: block;
-  margin-left: 110px;
-  margin-right: 2em;
-  border-radius: 50%;
-  border: 5px solid #4A4E69;
-  box-shadow: 10px 10px 5px #C9ADA7;
+  margin-left: 0em;
+  margin-right:0em;
+  padding-left: 8em;
+  padding-right: 8em;
+}
+
+.subtitle{
+  text-align: center;
+  
+}
+
+/* MYTH GENERATOR*/
+.genMyth {
+  background: #c9184a;
+  border-radius: 10px;
+  border-style: none;
+
+  padding: 15px;
+
+  margin-top: 30px;
+  margin-left: 35%;
+  margin-right: 35%;
+
+  box-shadow: 10px 10px 0px #800F2F;
+}
+
+.genMythText {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+  line-height: 1.2em;
+  color: #ffccd5;
+}
+
+#myth {
+  border-style: none;
+
+  padding: 15px;
+
+  margin-top: 30px;
+  margin-left: 15%;
+  margin-right: 15%;
+
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 2em;
+  text-align: center;
+  line-height: 1.2em;
+  color: #800F2F;
 
 }
 
-#button{
-  font-family: Arial;
-  font-style:italic;
-  letter-spacing: 3px;
+#mythBtn{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 
-  box-shadow: 10px 10px 5px #C9ADA7;
-  margin-top: 70px;
-  margin-left: 250px;
-  width: 380px;
-  height: 50px;
-  background: #9A8C98;
+  background: #F8EDEB;
+  border-style: none;
+  border-radius: 10px;
 
-  list-style-type: none;
-  overflow: hidden;
-  padding: 1em;
-  margin-bottom: 4em;
-}
-#button a {
-  text-decoration: none;
-  color: #F2E9E4;
-  font-size: 1.3em;
-  padding: 1em;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+
+  color: #ff758f;
+  font-size: 24pt;
 }
 
-#button a:hover {
-  background-color: #C9ADA7;
+/* CALL LEGISLATORS*/
+.scriptQues {
+  background: #c9184a;
+  border-radius: 10px;
+  box-shadow: 10px 10px 0px #800F2F;
+
+  margin-top: 5%;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-bottom: 40px;
+
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 0.9em;
+  color: #F8EDEB;
 }
 
+.scriptItem{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+  margin-right: 10px;
+
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+
+#scriptBtn {
+  background: #ff758f;
+  border-style: none;
+  border-radius: 10px;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  
+  padding: 10px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+
+  color: #ffffff;
+  font-size: 1em;
+}
+
+input {
+  border-style: none;
+  border-radius: 5px;
+  width: 60%;
+}
+
+#scriptReturned {
+  margin-top: 5%;
+  margin-left: 15%;
+  margin-right: 15%;
+
+  color: #800F2F;
+}
+
+.resources {
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color:#800F2F;
+  font-weight: 200;
+  font-size:18pt;
+
+  margin-top: 10px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.resources li {
+  margin-bottom: 15px;
+}
